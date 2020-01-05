@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgwhite"
+    tools:context=".Learn_4th">
+    <Button
+        android:id="@+id/chapter16"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="125dp"
+        android:background="@drawable/custom_button"
+        android:text="Chapter Sixteen"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/chapter17"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFFFF"
+        android:text="Chapter Seventeen"
+        app:layout_constraintEnd_toEndOf="@+id/chapter16"
+        app:layout_constraintStart_toStartOf="@+id/chapter16"
+        app:layout_constraintTop_toBottomOf="@+id/chapter16" />
+
+    <Button
+        android:id="@+id/chapter18"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFFFF"
+        android:text="Chapter Eighteen"
+        app:layout_constraintEnd_toEndOf="@+id/chapter17"
+        app:layout_constraintStart_toStartOf="@+id/chapter17"
+        app:layout_constraintTop_toBottomOf="@+id/chapter17" />
+
+    <Button
+        android:id="@+id/chapter19"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFFFF"
+        android:text="Chapter Nineteen"
+        app:layout_constraintEnd_toEndOf="@+id/chapter18"
+        app:layout_constraintStart_toStartOf="@+id/chapter18"
+        app:layout_constraintTop_toBottomOf="@+id/chapter18" />
+
+    <Button
+        android:id="@+id/chapter20"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFFFF"
+        android:text="Chapter Twenty"
+        app:layout_constraintEnd_toEndOf="@+id/chapter19"
+        app:layout_constraintStart_toStartOf="@+id/chapter19"
+        app:layout_constraintTop_toBottomOf="@+id/chapter19" />
+
+    <Button
+        android:id="@+id/prev2"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/extra_button"
+        android:textColor="#FFFFFF"
+        android:text="Previous Chapters"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chapter20" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
