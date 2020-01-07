@@ -14,7 +14,6 @@
             android:layout_marginStart="125dp"
             android:layout_marginTop="140dp"
             android:layout_marginEnd="125dp"
-            android:textColor="#FFFFFF"
             android:background="@drawable/custom_button"
             android:text="Chapter Eleven"
             app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +25,6 @@
             android:background="@drawable/custom_button"
             android:layout_width="170dp"
             android:layout_height="55dp"
-            android:textColor="#FFFFFF"
             android:layout_marginTop="30dp"
             android:text="Chapter Twelve"
             app:layout_constraintEnd_toEndOf="@+id/chapter11"
@@ -40,7 +38,6 @@
             android:background="@drawable/custom_button"
             android:layout_height="55dp"
             android:layout_marginTop="30dp"
-            android:textColor="#FFFFFF"
             android:text="Chapter Thirteen"
             app:layout_constraintEnd_toEndOf="@+id/chapter12"
             app:layout_constraintHorizontal_bias="0.487"
@@ -54,7 +51,6 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/custom_button"
             android:text="Chapter Fourteen"
-            android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="@+id/chapter13"
             app:layout_constraintStart_toStartOf="@+id/chapter13"
             app:layout_constraintTop_toBottomOf="@+id/chapter13" />
@@ -65,7 +61,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:background="@drawable/custom_button"
-            android:textColor="#FFFFFF"
             android:text="Chapter Fifteen"
             app:layout_constraintEnd_toEndOf="@+id/chapter14"
             app:layout_constraintStart_toStartOf="@+id/chapter14"
@@ -91,8 +86,57 @@
             android:layout_marginTop="40dp"
             android:layout_marginEnd="45dp"
             android:background="@drawable/extra_button"
-            android:text="Learn More"
             android:textColor="#FFFFFF"
+            android:text="Learn More"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chapter15" />
+        <ImageView
+            android:id="@+id/lock1"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/chapter12"
+            app:layout_constraintTop_toBottomOf="@+id/chapter11"
+            app:srcCompat="@drawable/lock" />
+
+        <ImageView
+            android:id="@+id/lock2"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/chapter13"
+            app:layout_constraintTop_toBottomOf="@+id/chapter12"
+            app:srcCompat="@drawable/lock" />
+
+        <ImageView
+            android:id="@+id/lock3"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/chapter14"
+            app:layout_constraintTop_toBottomOf="@+id/chapter13"
+            app:srcCompat="@drawable/lock" />
+
+        <ImageView
+            android:id="@+id/lock4"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/chapter15"
+            app:layout_constraintTop_toBottomOf="@+id/chapter14"
+            app:srcCompat="@drawable/lock" />
+
+        <ImageView
+            android:id="@+id/lock"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/chapter11"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lock" />
 </androidx.constraintlayout.widget.ConstraintLayout>

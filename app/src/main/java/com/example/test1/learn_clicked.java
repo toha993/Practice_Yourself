@@ -76,6 +76,11 @@ public class learn_clicked extends AppCompatActivity implements View.OnClickList
         }
 
 }
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
 
     private void openchapter1clicked(int x) {
         Intent intent =new Intent(this,chapter1clicked.class);

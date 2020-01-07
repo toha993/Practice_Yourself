@@ -135,6 +135,10 @@ public class Review_chapter extends AppCompatActivity implements View.OnClickLis
 
         }
     }
+    @Override
+    public void onBackPressed() {
+
+    }
     private void openright(Button xd)
     {
         result="Congrats! Right Answer.";
