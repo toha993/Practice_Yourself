@@ -29,7 +29,7 @@ public class Congratulations extends AppCompatActivity implements View.OnClickLi
                 yourPrefrence.updt(xd, 1);
                 System.out.println(yourPrefrence.unlock(xd));
             }
-            boo.setText("Congrats..." + right + "   " + chapter);
+            boo.setText("Hurrah...You have unlocked the Chapter "+chapter+".\nYour Score is "+right+" out of 15.");
             btn1.setOnClickListener(this);
         }
 
@@ -41,6 +41,9 @@ public class Congratulations extends AppCompatActivity implements View.OnClickLi
                 openhome();
                 break;
         }
+    }
+    @Override
+    public void onBackPressed() {
     }
     private void openhome()
     {

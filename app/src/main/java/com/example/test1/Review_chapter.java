@@ -28,6 +28,7 @@ public class Review_chapter extends AppCompatActivity implements View.OnClickLis
     String answer,opta1,opta2,opta3,opta4,result,ifwrong,qstn;
     Button option1,option2,option3,option4,next;
     int mn,mx,ck=0,right=0;
+    boolean[] qst=new boolean[3000];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -123,14 +124,18 @@ public class Review_chapter extends AppCompatActivity implements View.OnClickLis
                 }
                 break;
             case R.id.nextq:
-                if(ck<15)
+                if(ck<3)
                 {
                     nxtq();
                     clickable();
                     ck++;
                 }
-                else
-                    openfinalresult((mx+1)/120,right);
+                else {
+                    if(right>1)
+                    openfinalresult((mx + 1) / 120, right);
+                    else
+                        openrng();
+                }
                 break;
 
         }
@@ -163,9 +168,19 @@ public class Review_chapter extends AppCompatActivity implements View.OnClickLis
         startActivity(intent);
 
     }
+    private void openrng()
+    {
+        Intent intent = new Intent(this,wrong_answer.class);
+        startActivity(intent);
+    }
     private void nxtq()
     {
         int  x =(int) ((Math.random()*((mx-mn)+1))+mn);
+        while(qst[x])
+        {
+            x =(int) ((Math.random()*((mx-mn)+1))+mn);
+        }
+        qst[x]=true;
         //System.out.println(word.size());
         qstn=word.get(x);
         qstn=qstn.toUpperCase();
