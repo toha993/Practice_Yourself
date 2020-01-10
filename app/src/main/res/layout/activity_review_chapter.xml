@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/black"
     tools:context=".Review_chapter">
 
     <TextView
@@ -14,7 +15,8 @@
         android:layout_marginTop="124dp"
         android:layout_marginEnd="100dp"
         android:textAlignment="center"
-        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,6 +81,7 @@
         android:layout_height="35dp"
         android:layout_marginTop="16dp"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/opt4"
         app:layout_constraintStart_toStartOf="@+id/opt4"
         app:layout_constraintTop_toBottomOf="@+id/opt4" />
@@ -88,6 +91,7 @@
         android:layout_width="140dp"
         android:layout_height="40dp"
         android:layout_marginTop="25dp"
+        android:textColor="#FFFFFF"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/textView4"
         app:layout_constraintHorizontal_bias="0.54"

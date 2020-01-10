@@ -4,13 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/black"
     tools:context=".wrong_answer">
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="204dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/wrong" />
+
     <TextView
-        android:id="@+id/vul"
+        android:id="@+id/finale"
+        android:layout_width="195dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/animation_view"
+        app:layout_constraintStart_toStartOf="@+id/animation_view"
+        app:layout_constraintTop_toBottomOf="@+id/animation_view" />
+
+    <Button
+        android:id="@+id/home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="183dp"
-        tools:layout_editor_absoluteY="281dp" />
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:text="Home"
+        app:layout_constraintStart_toStartOf="@+id/finale"
+        app:layout_constraintTop_toBottomOf="@+id/finale" />
 </androidx.constraintlayout.widget.ConstraintLayout>
