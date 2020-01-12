@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import static android.view.View.GONE;
+
 public class Review_2nd extends AppCompatActivity implements View.OnClickListener{
     ImageView img,img1,img2,img3,img4;
     Button btn1,btn2,btn3,btn4,btn5,btn6,btn7;
@@ -103,27 +105,29 @@ public class Review_2nd extends AppCompatActivity implements View.OnClickListene
             btn1.setEnabled(false);
             img4.setVisibility(View.VISIBLE);
         }
+        else
+            img4.setVisibility(View.GONE);
         if(yourPrefrence.unlock(Integer.toString(7)) != 1 )
         {
             btn2.setEnabled(false);
             img.setVisibility(View.VISIBLE);
         }
         else
-            img.setVisibility(View.GONE);
+            img.setVisibility(GONE);
         if(yourPrefrence.unlock(Integer.toString(8)) != 1)
         {
             btn3.setEnabled(false);
             img1.setVisibility(View.VISIBLE);
         }
         else
-            img1.setVisibility(View.GONE);
+            img1.setVisibility(GONE);
         if(yourPrefrence.unlock(Integer.toString(9)) != 1)
         {
             btn4.setEnabled(false);
             img2.setVisibility(View.VISIBLE);
         }
         else
-            img2.setVisibility(View.GONE);
+            img2.setVisibility(GONE);
 
         if(yourPrefrence.unlock(Integer.toString(10)) != 1)
         {
@@ -131,6 +135,6 @@ public class Review_2nd extends AppCompatActivity implements View.OnClickListene
             img3.setVisibility(View.VISIBLE);
         }
         else
-            img3.setVisibility(View.GONE);
+            img3.setVisibility(GONE);
     }
 }

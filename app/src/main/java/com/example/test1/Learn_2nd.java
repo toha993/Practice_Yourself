@@ -100,6 +100,8 @@ public class Learn_2nd extends AppCompatActivity implements View.OnClickListener
             btn1.setEnabled(false);
             img4.setVisibility(View.VISIBLE);
         }
+        else
+            img4.setVisibility(View.GONE);
         if(yourPrefrence.unlock(Integer.toString(7)) != 1 )
         {
             btn2.setEnabled(false);

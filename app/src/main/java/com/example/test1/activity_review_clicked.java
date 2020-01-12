@@ -44,7 +44,7 @@ public class activity_review_clicked extends AppCompatActivity implements View.O
         {
             case R.id.chapter1:
                 Toast.makeText(this,"Clicked Chapter One",Toast.LENGTH_SHORT).show();
-                openreviewchapter(0,119);
+                openreviewchapter(1,119);
                 break;
             case R.id.chapter2:
                 Toast.makeText(this,"Clicked Chapter Two",Toast.LENGTH_SHORT).show();

@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import static android.view.View.GONE;
+
 public class Review_3rd extends AppCompatActivity implements View.OnClickListener {
     ImageView img,img1,img2,img3,img4;
     Button btn1,btn2,btn3,btn4,btn5,btn6,btn7;
@@ -101,6 +103,8 @@ public class Review_3rd extends AppCompatActivity implements View.OnClickListene
             btn1.setEnabled(false);
             img4.setVisibility(View.VISIBLE);
         }
+        else
+            img4.setVisibility(View.GONE);
         if(yourPrefrence.unlock(Integer.toString(12)) != 1 )
         {
             btn2.setEnabled(false);

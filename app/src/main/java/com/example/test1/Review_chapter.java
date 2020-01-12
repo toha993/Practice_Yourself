@@ -131,7 +131,7 @@ public class Review_chapter extends AppCompatActivity implements View.OnClickLis
                     ck++;
                 }
                 else {
-                    if(right>1)
+                    if(right>=0)
                     openfinalresult((mx + 1) / 120, right);
                     else
                         openrng();
