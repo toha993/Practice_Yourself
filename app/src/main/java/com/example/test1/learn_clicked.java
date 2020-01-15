@@ -80,6 +80,8 @@ public class learn_clicked extends AppCompatActivity implements View.OnClickList
     public void onBackPressed() {
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
+        finishAffinity();
+
     }
 
     private void openchapter1clicked(int x) {

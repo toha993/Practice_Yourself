@@ -46,23 +46,23 @@ public class Review_3rd extends AppCompatActivity implements View.OnClickListene
     public void onClick(View view) {
         switch(view.getId())
         {
-            case R.id.chapter1:
+            case R.id.chapter11:
                 Toast.makeText(this,"Clicked Chapter Eleven",Toast.LENGTH_SHORT).show();
                 openreviewchapter(1200,1319);
                 break;
-            case R.id.chapter2:
+            case R.id.chapter12:
                 Toast.makeText(this,"Clicked Chapter Twelve",Toast.LENGTH_SHORT).show();
                 openreviewchapter(1320,1439);
                 break;
-            case R.id.chapter3:
+            case R.id.chapter13:
                 Toast.makeText(this,"Clicked Chapter Thirteen",Toast.LENGTH_SHORT).show();
                 openreviewchapter(1440,1559);
                 break;
-            case R.id.chapter4:
+            case R.id.chapter14:
                 Toast.makeText(this,"Clicked Chapter Fourteen",Toast.LENGTH_SHORT).show();
                 openreviewchapter(1560,1679);
                 break;
-            case R.id.chapter5:
+            case R.id.chapter15:
                 Toast.makeText(this,"Clicked Chapter Fifteen",Toast.LENGTH_SHORT).show();
                 openreviewchapter(1680,1799);
                 break;

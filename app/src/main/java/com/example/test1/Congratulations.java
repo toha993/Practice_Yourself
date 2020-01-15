@@ -24,7 +24,7 @@ public class Congratulations extends AppCompatActivity implements View.OnClickLi
             System.out.println(chapter);
             chapter++;
             String xd = String.valueOf(chapter);
-            if (right >= 1) {
+            if (right >= 0) {
                 System.out.println(yourPrefrence.unlock(xd));
                 yourPrefrence.updt(xd, 1);
                 System.out.println(yourPrefrence.unlock(xd));
@@ -49,5 +49,6 @@ public class Congratulations extends AppCompatActivity implements View.OnClickLi
     {
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
+        finishAffinity();
     }
 }

@@ -85,8 +85,9 @@ public class chapter1clicked extends AppCompatActivity implements View.OnClickLi
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.nxtwrd:
-                Toast.makeText(this,"Next Word", Toast.LENGTH_SHORT).show();
+
                 if(p*120+x<p*120+120) {
+                    Toast.makeText(this,"Next Word", Toast.LENGTH_SHORT).show();
                     x++;
                     if(p==0 && x==1)
                         x++;
@@ -95,7 +96,10 @@ public class chapter1clicked extends AppCompatActivity implements View.OnClickLi
                     meaning.setText(correct.get(p*120+x));
                 }
                 else
+                {
+                    Toast.makeText(this,"Yahooo...", Toast.LENGTH_SHORT).show();
                     openCongratulations();
+                }
                 break;
             case R.id.prev_word:
                 if(p*120+x==1)
@@ -139,8 +143,9 @@ public class chapter1clicked extends AppCompatActivity implements View.OnClickLi
 
     public void openCongratulations()
     {
-        Intent intent =new Intent(this,Congratulations.class);
+        Intent intent =new Intent(this,finished.class);
         startActivity(intent);
+        finishAffinity();
     }
     private void ConvertTextToSpeech() {
         text = thetext.getText().toString();

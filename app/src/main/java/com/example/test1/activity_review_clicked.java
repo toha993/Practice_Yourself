@@ -75,6 +75,8 @@ public class activity_review_clicked extends AppCompatActivity implements View.O
     public void onBackPressed() {
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
+        finishAffinity();
+
     }
     private void openreviewchapter(int start,int end)
     {
