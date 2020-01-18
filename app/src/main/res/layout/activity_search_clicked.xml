@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgwhite"
+    android:background="#5e6160"
     tools:context=".search_clicked">
 
     <EditText
@@ -16,6 +16,7 @@
         android:layout_marginEnd="150dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="#F7F7F2"
         android:textSize="25sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,6 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
+        android:background="@drawable/custom_button"
         android:text="@android:string/search_go"
         app:layout_constraintEnd_toEndOf="@+id/textView7"
         app:layout_constraintHorizontal_bias="0.598"
@@ -40,6 +42,7 @@
         android:layout_marginTop="80dp"
         android:layout_marginEnd="251dp"
         android:textAlignment="center"
+        android:textColor="#E4E6C3"
         android:textSize="25sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="@+id/editText"
@@ -53,6 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:textAlignment="center"
+        android:textColor="#E4E6C3"
         app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="@+id/editText"
         app:layout_constraintHorizontal_bias="0.496"

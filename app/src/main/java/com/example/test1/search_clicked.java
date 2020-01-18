@@ -43,7 +43,7 @@ public class search_clicked extends AppCompatActivity{
                 }
                 else
                 {
-                    answer="Meaning is "+correct.get(index);
+                    answer=correct.get(index);
                     answer=answer.toUpperCase();
                 }
                 slve.setText(answer);

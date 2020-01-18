@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.airbnb.lottie.LottieAnimationView;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -25,11 +27,10 @@ public class chapter1clicked extends AppCompatActivity implements View.OnClickLi
     String txt="means",text;
     int x=0,p;
     Secondshared secpreference;
-    //String eachline;
-
+    LottieAnimationView shunso,nxx,prx;
     TextView thetext,meaning,nthng;
     TextToSpeech tts;
-    Button nxt,prev,shpk;
+    Button nxt,prev;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,9 +39,15 @@ public class chapter1clicked extends AppCompatActivity implements View.OnClickLi
         secpreference=Secondshared.getInstance(this);
         p=intent.getIntExtra("start",0);
         thetext=findViewById(R.id.textView2);
-        shpk=findViewById(R.id.spk);
+       // shpk=findViewById(R.id.spk);
        // //nmbr=findViewById(R.id.wrdno);
         meaning=findViewById(R.id.textView);
+        shunso=findViewById(R.id.snd);
+        nxx=findViewById(R.id.prevv);
+        prx=findViewById(R.id.nxtt);
+        shunso.setOnClickListener(this);
+        nxx.setOnClickListener(this);
+        prx.setOnClickListener(this);
         nthng=findViewById(R.id.textView3);
         tts=new TextToSpeech(this, new TextToSpeech.OnInitListener() {
             @Override
@@ -56,11 +63,11 @@ public class chapter1clicked extends AppCompatActivity implements View.OnClickLi
                 }
             }
         });
-        nxt=findViewById(R.id.nxtwrd);
-        prev=findViewById(R.id.prev_word);
-        nxt.setOnClickListener(this);
-        shpk.setOnClickListener(this);
-        prev.setOnClickListener(this);
+//        nxt=findViewById(R.id.nxtwrd);
+//        prev=findViewById(R.id.prev_word);
+        //nxt.setOnClickListener(this);
+        //shpk.setOnClickListener(this);
+        //prev.setOnClickListener(this);
         if(secpreference.unlock(Integer.toString(p))==-1)
         {
             x=0;
@@ -84,9 +91,9 @@ public class chapter1clicked extends AppCompatActivity implements View.OnClickLi
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.nxtwrd:
+            case R.id.prevv:
 
-                if(p*120+x<p*120+120) {
+                if(p*120+x<p*120+119) {
                     Toast.makeText(this,"Next Word", Toast.LENGTH_SHORT).show();
                     x++;
                     if(p==0 && x==1)
@@ -101,7 +108,7 @@ public class chapter1clicked extends AppCompatActivity implements View.OnClickLi
                     openCongratulations();
                 }
                 break;
-            case R.id.prev_word:
+            case R.id.nxtt:
                 if(p*120+x==1)
                 {
                     Toast.makeText(this,"No More Previous Word", Toast.LENGTH_SHORT).show();
@@ -124,7 +131,7 @@ public class chapter1clicked extends AppCompatActivity implements View.OnClickLi
                     meaning.setText(correct.get(p * 120));
                 }
                 break;
-            case R.id.spk:
+            case R.id.snd:
                 ConvertTextToSpeech();
 
         }

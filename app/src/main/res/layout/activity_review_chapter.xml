@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/black"
+    android:background="#5e6160"
     tools:context=".Review_chapter">
 
     <TextView
@@ -27,6 +27,7 @@
         android:layout_width="200dp"
         android:layout_height="45dp"
         android:layout_marginTop="40dp"
+        android:background="@drawable/spkbtn"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="@+id/ques"
         app:layout_constraintHorizontal_bias="0.48"
@@ -38,6 +39,7 @@
         android:layout_width="200dp"
         android:layout_height="45dp"
         android:layout_marginTop="25dp"
+        android:background="@drawable/spkbtn"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="@+id/opt1"
         app:layout_constraintStart_toStartOf="@+id/opt1"
@@ -49,6 +51,7 @@
         android:layout_height="45dp"
         android:layout_marginTop="25dp"
         android:text="Button"
+        android:background="@drawable/spkbtn"
         app:layout_constraintEnd_toEndOf="@+id/opt2"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/opt2"
@@ -59,6 +62,7 @@
         android:layout_width="200dp"
         android:layout_height="45dp"
         android:layout_marginTop="25dp"
+        android:background="@drawable/spkbtn"
         android:text="Button"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/opt3"
@@ -80,6 +84,7 @@
         android:layout_width="100dp"
         android:layout_height="35dp"
         android:layout_marginTop="16dp"
+
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/opt4"

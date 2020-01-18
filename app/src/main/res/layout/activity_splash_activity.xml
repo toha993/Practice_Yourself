@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#899878"
+    android:background="#C41D54"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".splash_activity">
 
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         app:lottie_autoPlay="true"
-        app:lottie_colorFilter="#e4e6c3"
+        app:lottie_colorFilter="#ffffff"
         app:lottie_rawRes="@raw/splash"
         app:lottie_loop="false"/>
 
