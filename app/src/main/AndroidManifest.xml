@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".finished"></activity>
+        <activity android:name=".cardview"></activity>
+        <activity android:name=".finished" />
         <activity android:name=".Learn_3rd" />
         <activity android:name=".Review_4th" />
         <activity android:name=".Review_3rd" />

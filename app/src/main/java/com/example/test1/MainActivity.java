@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void opensearch()
     {
 
-        Intent intent =new Intent(this,search_clicked.class);
+        Intent intent =new Intent(this,cardview.class);
         startActivity(intent);
     }
 

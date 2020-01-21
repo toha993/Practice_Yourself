@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".learn_clicked"
-    android:background="@drawable/blke">
+    android:background="#003249">
 
     <Button
         android:id="@+id/chapter1"
@@ -72,14 +72,13 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="45dp"
         android:background="@drawable/extra_button"
-        android:text="Learn More"
-        android:textColor="#FFFFFF"
+        android:text="Next Chapters"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chapter5" />
 
     <ImageView
         android:id="@+id/lock1"
-        android:layout_width="wrap_content"
+        android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
@@ -89,7 +88,7 @@
 
     <ImageView
         android:id="@+id/lock2"
-        android:layout_width="wrap_content"
+        android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
@@ -99,7 +98,7 @@
 
     <ImageView
         android:id="@+id/lock3"
-        android:layout_width="wrap_content"
+        android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
@@ -109,7 +108,7 @@
 
     <ImageView
         android:id="@+id/lock4"
-        android:layout_width="wrap_content"
+        android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
