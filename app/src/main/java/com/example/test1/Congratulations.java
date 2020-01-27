@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -13,7 +15,9 @@ public class Congratulations extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState){
             super.onCreate(savedInstanceState);
-            YourPreference yourPrefrence = YourPreference.getInstance(this);
+        getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        YourPreference yourPrefrence = YourPreference.getInstance(this);
             setContentView(R.layout.activity_congratulations);
             TextView boo = findViewById(R.id.finale);
             btn1=findViewById(R.id.home);
@@ -24,7 +28,7 @@ public class Congratulations extends AppCompatActivity implements View.OnClickLi
             System.out.println(chapter);
             chapter++;
             String xd = String.valueOf(chapter);
-            if (right >= 0) {
+            if (right >= 12) {
                 System.out.println(yourPrefrence.unlock(xd));
                 yourPrefrence.updt(xd, 1);
                 System.out.println(yourPrefrence.unlock(xd));
