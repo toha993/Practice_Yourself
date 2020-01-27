@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/review_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#5e6160"
+    android:background="@drawable/cg2"
     tools:context=".Review_chapter">
 
     <TextView
@@ -12,13 +13,14 @@
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="100dp"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,7 +28,7 @@
         android:id="@+id/opt1"
         android:layout_width="200dp"
         android:layout_height="45dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/spkbtn"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="@+id/ques"
@@ -38,7 +40,7 @@
         android:id="@+id/opt2"
         android:layout_width="200dp"
         android:layout_height="45dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/spkbtn"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="@+id/opt1"
@@ -49,9 +51,9 @@
         android:id="@+id/opt3"
         android:layout_width="200dp"
         android:layout_height="45dp"
-        android:layout_marginTop="25dp"
-        android:text="Button"
+        android:layout_marginTop="15dp"
         android:background="@drawable/spkbtn"
+        android:text="Button"
         app:layout_constraintEnd_toEndOf="@+id/opt2"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/opt2"
@@ -61,7 +63,7 @@
         android:id="@+id/opt4"
         android:layout_width="200dp"
         android:layout_height="45dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/spkbtn"
         android:text="Button"
         android:textSize="14sp"
@@ -73,34 +75,25 @@
         android:id="@+id/nextq"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="50dp"
         android:text="next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="100dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="16dp"
-
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/opt4"
-        app:layout_constraintStart_toStartOf="@+id/opt4"
         app:layout_constraintTop_toBottomOf="@+id/opt4" />
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="25dp"
-        android:textColor="#FFFFFF"
+        android:id="@+id/mean"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="100dp"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.54"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
