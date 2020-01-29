@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -45,6 +46,7 @@ public class search_clicked extends AppCompatActivity implements View.OnClickLis
         LottieAnimationView lot=findViewById(R.id.animation_view);
         lot.setOnClickListener(this);
         src=findViewById(R.id.editText);
+        urwrd=findViewById(R.id.textView4);
         slve=findViewById(R.id.textView7);
         if(done==0) {
             try {
@@ -65,7 +67,7 @@ public class search_clicked extends AppCompatActivity implements View.OnClickLis
             }
             done=1;
         }
-        System.out.println(dictword.size());
+        //System.out.println(dictword.size());
     }
     @Override
     public void onBackPressed() {
@@ -79,6 +81,7 @@ public class search_clicked extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view) {
         if (view.getId() == R.id.animation_view) {
             words = src.getText().toString().trim();
+            src.onEditorAction(EditorInfo.IME_ACTION_DONE);
             words = words.toLowerCase();
             int index = Collections.binarySearch(dictword, words);
             if (index <= -1) {
@@ -88,6 +91,8 @@ public class search_clicked extends AppCompatActivity implements View.OnClickLis
                 //answer=answer.toUpperCase();
             }
             slve.setText(answer);
+            urwrd.setText(words+":");
+            src.setText("");
         }
     }
 }

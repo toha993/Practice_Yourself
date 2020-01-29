@@ -88,13 +88,13 @@ public class Learn_3rd extends AppCompatActivity implements View.OnClickListener
     {
         Intent intent =new Intent(this,Learn_2nd.class);
         startActivity(intent);
-        finishAffinity();
+      //  finishAffinity();
     }
     public void openlearn4thclicked()
     {
         Intent intent =new Intent(this,Learn_4th.class);
         startActivity(intent);
-        finishAffinity();
+      //  finishAffinity();
     }
     private void check()
     {
